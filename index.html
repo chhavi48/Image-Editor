@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+   
+  <body>
+    <!-- <canvas id="canvas1" width="500" height="500"></canvas> -->
+
+    <div class="editor">
+      <div class="toolbar">
+        <div class="toolbar-item">
+          <input type="file" id="imageFileInput">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="brightness">Brightness</label>
+          <input class="tool-input" type="range" id="brightness" min="0" max="200">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="saturation">Saturation</label>
+          <input class="tool-input" type="range" id="saturation" min="0" max="200">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="blur">Blur</label>
+          <input class="tool-input" type="range" id="blur" min="0" max="25">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="inversion">Inversion</label>
+          <input class="tool-input" type="range" id="inversion" min="0" max="100">
+        </div>
+      </div>
+      <div class="image-area">
+         <canvas id="canvas1"></canvas>
+      </div>
+    </div>
+
+  </body>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+</html>
